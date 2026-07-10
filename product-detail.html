@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Product Detail</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+      }
+      body {
+        background: #fff8f0;
+        color: #333;
+      }
+      header {
+        background: #8b5e3c;
+        color: #fff;
+        padding: 18px 8%;
+        display: flex;
+        justify-content: space-between;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 18px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 0 8%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+      img {
+        width: 100%;
+        border-radius: 14px;
+      }
+      .price {
+        font-size: 30px;
+        color: #8b5e3c;
+        margin: 15px 0;
+      }
+      .badge {
+        display: inline-block;
+        background: #d4a056;
+        color: #fff;
+        padding: 6px 14px;
+        border-radius: 20px;
+      }
+      .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 14px 28px;
+        background: #8b5e3c;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 30px;
+      }
+      .info {
+        margin-top: 25px;
+      }
+      .info li {
+        margin: 8px 0;
+      }
+      .related {
+        padding: 60px 8%;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+      .card {
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .card img {
+        height: 170px;
+        object-fit: cover;
+      }
+      .c {
+        padding: 15px;
+      }
+      footer {
+        background: #5c4033;
+        color: #fff;
+        text-align: center;
+        padding: 25px;
+      }
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Sweet Crumbs</h2>
+      <nav>
+        <a href="index.html">Home</a><a href="products.html">Products</a
+        ><a href="about.html">About</a><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <div class="container">
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=900&q=80"
+        />
+      </div>
+      <div>
+        <span class="badge">Best Seller</span>
+        <h1 style="margin-top: 15px">Chocolate Cake</h1>
+        <p class="price">Rp 85.000</p>
+        <p>
+          Our signature chocolate cake is made with premium cocoa, fresh milk,
+          and soft sponge layers. Perfect for birthdays, celebrations, or
+          enjoying with family.
+        </p>
+        <div class="info">
+          <h3>Ingredients</h3>
+          <ul>
+            <li>Premium Cocoa</li>
+            <li>Fresh Milk</li>
+            <li>Butter</li>
+            <li>Eggs</li>
+            <li>Flour</li>
+          </ul>
+          <br />
+          <h3>Product Information</h3>
+          <ul>
+            <li>Category : Cake</li>
+            <li>Weight : 700 gram</li>
+            <li>Storage : Keep refrigerated</li>
+            <li>Shelf Life : 3 Days</li>
+          </ul>
+        </div>
+        <a class="btn" href="https://wa.me/6281234567890">Order via WhatsApp</a>
+      </div>
+    </div>
+
+    <section class="related">
+      <h2 style="text-align: center; color: #8b5e3c; margin-bottom: 30px">
+        Related Products
+      </h2>
+      <div class="grid">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?auto=format&fit=crop&w=600&q=80"
+          />
+          <div class="c"><h3>Croissant</h3></div>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=600&q=80"
+          />
+          <div class="c"><h3>Donut</h3></div>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&q=80"
+          />
+          <div class="c"><h3>Cookies</h3></div>
+        </div>
+      </div>
+    </section>
+    <footer>Sweet Crumbs Bakery © 2026</footer>
+  </body>
+</html>
