@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#fff8f2"/>
+  <rect x="120" y="130" width="960" height="540" rx="36" fill="#ffffff"/>
+  <rect x="220" y="220" width="320" height="240" rx="24" fill="#8b5e3c"/>
+  <rect x="590" y="220" width="320" height="120" rx="20" fill="#d4a056"/>
+  <rect x="590" y="370" width="320" height="140" rx="20" fill="#f2d4a8"/>
+  <circle cx="730" cy="285" r="40" fill="#fff8f2"/>
+  <path d="M630 500c50-80 140-120 220-100 70 18 120 72 135 140" stroke="#8b5e3c" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <text x="220" y="650" font-family="Poppins, Arial" font-size="44" font-weight="700" fill="#5c4033">Freshly baked with love</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#fff8f2"/>
+  <rect x="80" y="120" width="1040" height="560" rx="40" fill="#ffffff"/>
+  <circle cx="910" cy="250" r="160" fill="#f2d4a8"/>
+  <rect x="220" y="250" width="360" height="230" rx="24" fill="#8b5e3c"/>
+  <rect x="260" y="300" width="280" height="20" rx="10" fill="#ffffff" opacity="0.85"/>
+  <rect x="260" y="340" width="220" height="20" rx="10" fill="#ffffff" opacity="0.70"/>
+  <rect x="260" y="380" width="180" height="20" rx="10" fill="#ffffff" opacity="0.60"/>
+  <path d="M690 240c40-70 125-90 190-50 70 40 95 125 60 190-35 65-116 95-188 74-70-20-113-105-62-214z" fill="#d4a056"/>
+  <text x="220" y="620" font-family="Poppins, Arial" font-size="48" font-weight="700" fill="#5c4033">Sweet Crumbs Bakery</text>
+</svg>
