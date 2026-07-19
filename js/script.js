@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const productCards = Array.from(document.querySelectorAll(".product-card"));
   const showMoreButton = document.querySelector("[data-show-more]");
   const backToTop = document.getElementById("backToTop");
+  const whatsappButton = document.getElementById("whatsappButton");
   const contactForm = document.querySelector(".contact-form form");
   const formStatus = document.querySelector(".form-status");
   const modalOverlay = document.getElementById("productModalOverlay");
@@ -63,7 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const isExtra = card.classList.contains("product-card--extra");
       const shouldShow = !isExtra || isExpanded;
       card.classList.toggle("is-hidden", !shouldShow);
-      card.style.display = shouldShow ? "block" : "none";
     });
 
     if (showMoreButton) {
@@ -126,8 +126,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const handleScroll = () => {
     header?.classList.toggle("sticky", window.scrollY > 80);
+    const isScrollPassed = window.scrollY > 500;
     if (backToTop) {
-      backToTop.style.display = window.scrollY > 500 ? "flex" : "none";
+      backToTop.style.display = isScrollPassed ? "flex" : "none";
+    }
+    if (whatsappButton) {
+      whatsappButton.classList.toggle("shifted", isScrollPassed);
     }
   };
 
